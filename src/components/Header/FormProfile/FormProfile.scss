@@ -1,0 +1,20 @@
+@use '../../../styles/vars.scss' as *;
+
+.form__profile {
+  display: flex;
+  align-items: center;
+  .form__avatar {
+    margin-left: 0.5em;
+    img {
+      width: 2.5em;
+      height: 2.5em;
+      border: 1px solid #000;
+      border-radius: 50%;
+    }
+  }
+}
+
+.form__btn.logout {
+  border: 2px solid $danger-color;
+  color: $danger-color;
+}

@@ -1,0 +1,27 @@
+.error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.9;
+  z-index: 10;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    display: inline-block;
+    padding: 1em;
+    border: 5px solid red;
+    font-size: 3rem;
+    color: red;
+    animation: text 2s ease-in-out infinite;
+    @keyframes text {
+      50% {
+        color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@use "vars.scss" as vars;
+@use "null.scss" as null;
+
+.app {
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+._hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__btn {
+  padding: 0.5em 0.8em;
+  border-radius: 0.2em;
+  margin-left: 0.5em;
+  background: white;
+}

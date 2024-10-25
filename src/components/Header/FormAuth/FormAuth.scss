@@ -1,0 +1,17 @@
+@use '../../../styles/vars.scss' as *;
+
+.form__auth {
+  .form__input {
+    border: 2px solid $gray;
+    padding: 0.4em 0.8em;
+    border-radius: 0.2em;
+    &:nth-child(n + 2) {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+.form__btn.login {
+  border: 2px solid $success-color;
+  color: $success-color;
+}
