@@ -14,8 +14,10 @@ export default function News() {
     createRequest().then();
   }, [profile, handleNewsList, newsHandler, token]);
 
+  if (!news || error) return null;
+
   return (
-    (news && !error) && <main className="app__body body container">
+    <main className="app__body body container">
       {profile && news.map((el) => <NewsItem key={el.id} item={el} />)}
     </main>
   )

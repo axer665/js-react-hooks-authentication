@@ -20,7 +20,6 @@ export default function FormAuth({ handleLogin }) {
   }
 
   return (
-    <>
     <form onSubmit={handleSubmit} className="form__auth">
       <input
         onChange={handleChange}
@@ -42,8 +41,6 @@ export default function FormAuth({ handleLogin }) {
       />
       <button className="form__btn login">Login</button>
     </form>
-    </>
-    
   )
 }
 

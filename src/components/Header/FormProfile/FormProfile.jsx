@@ -4,8 +4,10 @@ import PropTypes from 'prop-types';
 export default function FormProfile(props) {
   const { profile, handleLogout } = props;
 
+  if (!profile) return null;
+
   return (
-    profile && <div className="form__profile">
+    <div className="form__profile">
       <div className="form__greeting">Hello, {profile.name}</div>
       <div className="form__avatar">
         <img src={profile.avatar} alt={profile.name} />
